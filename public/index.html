@@ -1,0 +1,22 @@
+<link href="styles.css" rel="stylesheet" />
+<form id="main-form">
+  <div id="intro">
+    Select a text element to change style properties
+  </div>
+  <label for="font-family-input">Font Family:</label>
+  <select id="font-family-input">
+      <option value="Arial, sans-serif">Arial</option>
+      <option value="Times New Roman, serif">Times New Roman</option>
+      <option value="Courier New, monospace">Courier New</option>
+  </select>
+
+  <label for="font-size-input">Font Size:</label>
+  <input id="font-size-input" type="range" id="font-size" min="10" max="36" step="2" value="16">
+  <span id="font-size-display">16px</span>
+
+  <label for="font-color-input">Font Color:</label>
+  <input type="color" id="font-color-input">
+  <span id="font-color-display">#000000</span>
+  <button>Preview Text Changes</button>
+</form>
+<script src="index.js"></script>
